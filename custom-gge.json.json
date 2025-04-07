@@ -1,0 +1,95 @@
+{
+  "js": "goodgamestudios.js",
+  "css": "goodgamestudios.css",
+  "endpoints": {
+    "CASH_OFFERS_HOSTNAME": "api.ggs-canvas.com/cashoffers",
+    "DAILY_BUNDLES_HOSTNAME": "api.ggs-canvas.com/dailybundles",
+    "GROWTH_FUNDS_HOSTNAME": "api.ggs-canvas.com/growthfunds",
+    "HARD_CURRENCY_HOSTNAME": "api.ggs-canvas.com/hard-currency",
+    "TRANSLATIONS_API_HOSTNAME": "translations-api-live.public.ggs-ep.com",
+    "OFFER_NOTIFS_HOSTNAME": "api.ggs-canvas.com/notifications-api",
+    "PIGGYBANK_HOSTNAME": "api.ggs-canvas.com/piggybank",
+    "SUBSCRIPTIONS_HOSTNAME": "api.ggs-canvas.com/subscriptions",
+    "VOUCHER_API_HOSTNAME": "api.ggs-canvas.com/vouchers",
+    "TRACKING_ENDPOINT_URL": "https://lemonstand-ct.goodgamestudios.com"
+  },
+  "webshopLocalePatterns": "%7Bwebshop_*%2C*subscr*%2Cdialog_alliance_sub*%2CconvenienceFeature*%2Cvalue_percentage%2CEvent_remainingtime%2Cgeneric_support%2Cgeneric_days%2Cpanel_action_stats%7D",
+  "langServerBaseUrl": "https://translations-api-live.public.ggs-ep.com",
+  "webshopWarmupUrl": "https://api.ggs-canvas.com/cashoffers/warmup?locale={locale}&sid={sessionId}&zoneId={zoneId}",
+  "unreadOfferNotifsCountUrl": "https://api.ggs-canvas.com/notifications-api/total?locale={locale}&zoneId={zoneId}&criteria={criteria}",
+  "categories": {
+    "promos": {
+      "title": "promoPackages",
+      "order": 1,
+      "enabled": true,
+      "trackingAppType": 9
+    },
+    "cashoffers": {
+      "title": "realcurrency",
+      "order": 3,
+      "enabled": true,
+      "trackingAppType": 0,
+      "currency": "TRY"
+    },
+    "supersale": {
+      "title": "salesDay",
+      "order": 4,
+      "trackingAppType": 2,
+      "enabled": true
+    },
+    "eventoffers": {
+      "title": "eventBundles",
+      "order": 5,
+      "enabled": true,
+      "trackingAppType": 4
+    },
+    "hardCurrency": {
+      "title": "paymentShop",
+      "order": 2,
+      "enabled": true,
+      "trackingAppType": 8
+    },
+    "piggybank": {
+      "title": "piggybank",
+      "order": 6,
+      "enabled": false,
+      "trackingAppType": 7
+    },
+    "hcbundles": {
+      "title": "hardCurrencyBundles",
+      "order": 7,
+      "enabled": true,
+      "trackingAppType": 3
+    },
+    "dailybundles": {
+      "title": "dailyBundle",
+      "order": 8,
+      "enabled": true,
+      "trackingAppType": 5
+    },
+    "growth-fund": {
+      "title": "growthpackage",
+      "order": 9,
+      "enabled": true,
+      "trackingAppType": 1
+    },
+    "subscriptions": {
+      "title": "subscriptions",
+      "order": 10,
+      "enabled": true,
+      "trackingAppType": 6
+    },
+    "vouchers": {
+      "title": "voucher",
+      "order": 11,
+      "enabled": true,
+      "trackingAppType": 10
+    }
+  },
+  "platformContext": {
+    "gamePlatform": ["web"],
+    "gameDistributionChannel": ["goodgamestudios"],
+    "storePaymentService": "ggs_payment",
+    "storeIntegrationType": "embedded"
+  }
+}
